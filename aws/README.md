@@ -15,9 +15,23 @@
 | Name                                                | Rationale             | Resources Affected                                                                                    |
 | --------------------------------------------------- |:---------------------:|-------------------------------------------------------------------------------------------------------|
 | disallow-low-backup-retention-period                |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster](https://www.pulumi.com/registry/packages/aws/api-docs/rds/cluster)|
-| disallow-classic-resources                          |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)  |
+| disallow-classic-resources                          |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)                         |
 | performance-insights-enabled                        |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/clusteristance)|
 | performance-insights-encrypted                      |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/clusteristance)|
 | disallow-public-access                              |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/clusteristance)|
 | storage-encryption-enabled                          |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster](https://www.pulumi.com/registry/packages/aws/api-docs/rds/cluster)|
 | storage-encryption-with-customer-managed-key        |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster](https://www.pulumi.com/registry/packages/aws/api-docs/rds/cluster)|
+
+## Lambda
+
+| Name                                                | Rationale             | Resources Affected                                                                                    |
+| --------------------------------------------------- |:---------------------:|-------------------------------------------------------------------------------------------------------|
+| disallow-lambda-without-tracing                     |                       |[Function](https://www.pulumi.com/registry/packages/aws/api-docs/lambda/function)|
+| disallow-permission-without-source-arn              |                       |[Permission](https://www.pulumi.com/registry/packages/aws/api-docs/lambda/permission)|
+
+## ECR
+
+| Name                                                | Rationale             | Resources Affected                                                                                    |
+| --------------------------------------------------- |:---------------------:|-------------------------------------------------------------------------------------------------------|
+| disallow-repo-without-image-scans                   |                       |[Repository](https://www.pulumi.com/registry/packages/aws/api-docs/ecr/repository)|
+| disallow-repo-without-immutable-image               |                       |[Repository](https://www.pulumi.com/registry/packages/aws/api-docs/ecr/repository)|
