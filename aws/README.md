@@ -5,36 +5,19 @@
 | Name                                                | Rationale             | Resources Affected                                                                                    |
 | --------------------------------------------------- |:---------------------:|-------------------------------------------------------------------------------------------------------|
 | add-desciption-to-security-group                    | Prevents human errors | [Security Group](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/securitygroup/)            |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| disallow-public-ips                                |                       | [Launch Configuration](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchconfiguration)/ |
-|                                                     |                       | [Launch Template](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchtemplate)/           |
-|                                                     |                       | [Instance](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/instance/)                       |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| disallow-unencrypted-volumes                       |                       | [Launch Template](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchtemplate)   |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| disallow-unencrypted-root-volume                   |                       | [Launch Configuration](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchconfiguration)/ |
-|                                                     |                       | [Instance](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/instance/)                       |
+| disallow-public-ips                                 |                       | [Launch Configuration](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchconfiguration)<br/>[Launch Template](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchtemplate)<br/>[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/instance/)    |
+| disallow-unencrypted-root-volume                         |                       | [Instance](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/instance/)  <br/>[Launch Configuration](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchconfiguration)            |                 
+| disallow-unencrypted-volumes |                       |[Launch Configuration](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchconfiguration)<br/>[Launch Template](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/launchtemplate)<br/>[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/ec2/instance/)    |
 
 
 ## RDS
 
 | Name                                                | Rationale             | Resources Affected                                                                                    |
 | --------------------------------------------------- |:---------------------:|-------------------------------------------------------------------------------------------------------|
-| disallow-low-backup-retention-period                |                       |            |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| disallow-classic-resources                          |                       |  |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| performance-insights-enabled                        |                       |    |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| performance-insights-encrypted                      |                       |  |
-|                                                     |                       |                      |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| disallow-public-access                     |                       |  |
-|                                                     |                       |                      |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| storage-encryption-enabled                         |                       |  |
-|                                                     |                       |                      |
-+-----------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
-| storage-encryption-with-customer-managed-key                         |                       |  |
-|                                                     |                       |                      |
-
+| disallow-low-backup-retention-period                |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster](https://www.pulumi.com/registry/packages/aws/api-docs/rds/cluster)|
+| disallow-classic-resources                          |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)  |
+| performance-insights-enabled                        |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/clusteristance)|
+| performance-insights-encrypted                      |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/clusteristance)|
+| disallow-public-access                              |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/clusteristance)|
+| storage-encryption-enabled                          |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster](https://www.pulumi.com/registry/packages/aws/api-docs/rds/cluster)|
+| storage-encryption-with-customer-managed-key        |                       |[Instance](https://www.pulumi.com/registry/packages/aws/api-docs/rds/instance)<br/>[Cluster](https://www.pulumi.com/registry/packages/aws/api-docs/rds/cluster)|
