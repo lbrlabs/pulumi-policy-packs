@@ -58,7 +58,7 @@ const instanceRootBlockDevice: ResourceValidationPolicy = {
 };
 
 const instanceBlockDevices: ResourceValidationPolicy = {
-  name: "disallow-unencrypted-volumes-on-launch-config",
+  name: "disallow-unencrypted-volumes-on-instace",
   description: "Checks that any EC2 instances do not have unencrypted volumes.",
   enforcementLevel: "advisory",
   validateResource: validateResourceOfType(
