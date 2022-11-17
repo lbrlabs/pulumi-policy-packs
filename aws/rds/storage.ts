@@ -29,7 +29,7 @@ const storageEncrypted: ResourceValidationPolicy = {
 };
 
 const storageCustomerManagedKey: ResourceValidationPolicy = {
-  name: "storage-encryptionenabled-with-customer-managed-key",
+  name: "storage-encryption-with-customer-managed-key",
   description: "Checks that storage is encrypted with a customer managed key.",
   enforcementLevel: "advisory",
   validateResource: [
